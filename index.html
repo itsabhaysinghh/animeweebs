@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>AnimeTv</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark w-100"
+      style="
+        position: fixed;
+        z-index: 15;
+        background-image: linear-gradient(
+          to right,
+          black,
+          rgb(255, 255, 255, 0),
+          rgb(255, 255, 255, 0),
+          black
+        );
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="logo.png" alt="" srcset="" style="width: 70px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Most Popular
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">One Piece</a></li>
+                <li><a class="dropdown-item" href="#">Dragon Ball Super</a></li>
+                <li><a class="dropdown-item" href="#">Black Clover</a></li>
+                <li><a class="dropdown-item" href="#">My Hero Academy</a></li>
+                <li><a class="dropdown-item" href="#">Attack on Titan</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              style="background-color: white; color: black"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner" style="height: 100vh">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="Onepiece.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="text-container">
+            <h3 class="heading3">#1</h3>
+            <h1 class="heading1">One Piece</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="https://kissanime.com.ru/Anime/One-Piece.54191/"
+              target="_blank"
+              attribute
+              ><button class="button">Watch now</button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="DragonBall.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="text-container">
+            <h3 class="heading3">#2</h3>
+            <h1 class="heading1">Dragon Ball Super</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="https://kissanime.com.ru/Anime/Dragon-Ball-Super.36495/"
+              target="_blank"
+              attribute
+              ><button class="button">Watch now</button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="BlackClover.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="text-container">
+            <h3 class="heading3">#3</h3>
+            <h1 class="heading1">Black Clover</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="https://kissanime.com.ru/Anime/black-clover-tv.55270/"
+              target="_blank"
+              attribute
+              ><button class="button">Watch now</button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="MyHeroAcademy.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="text-container">
+            <h3 class="heading3">#4</h3>
+            <h1 class="heading1">My Hero Academy</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="https://kissanime.com.ru/Anime/Boku-no-Hero-Academia-My-Hero-Academia.81166/"
+              target="_blank"
+              attribute
+              ><button class="button">Watch now</button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="AttackOnTitan.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="text-container">
+            <h3 class="heading3">#5</h3>
+            <h1 class="heading1">Attack on Titan</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="https://kissanime.com.ru/Anime/Shingeki-no-Kyojin.11874/"
+              target="_blank"
+              attribute
+              ><button class="button">Watch now</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+        style="z-index: 11; width: 150px"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+        style="z-index: 11"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+      </div>
+      <div id="animes" class="menu-spacing"></div>
+
+      <section class="section classic-bg">
+          <h2 style="text-align: center;">Animes</h2>
+          <div class="grid-animes">
+  
+              <div class="grid">
+                  <article>
+                      <h3 class="title-animes">Demon Slayer</h3>
+                      <div style="align-items: center;" class="intro-img home-img ">
+                          <img class="tamanho-animes" src="demon.png"
+                              alt="Banner do anime Demon Slayer: Kimetsu no Yaiba">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Tanjiro, um bondoso jovem que
+                          ganha a vida vendendo carvão,
+                          descobre que sua família foi massacrada por um demônio. E pra piorar, Nezuko, sua irmã mais nova
+                          e única sobrevivente, também foi transformada num demônio. Arrasado com esta sombria realidade,
+                          Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana, e para
+                          matar o demônio que matou sua família. Um triste conto sobre dois irmãos, onde os destinos dos
+                          humanos e dos demônios se entrelaçam, começa agora.</p>
+                  </article>
+                  <article>
+                      <h3 class="title-animes">Attack on Titan</h3>
+                      <div style="align-items: center;" class="intro-img home-img">
+                          <img class="tamanho-animes" src="attack.png"
+                              alt="Banner do anime Attack on Titan - Shingeki No Kyojin">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Eren Jaeger jurou eliminar
+                          todos os Titãs, mas em uma batalha desesperada ele se torna aquilo que mais odeia. Com seus
+                          novos poderes, ele luta pela liberdade da humanidade, combatendo os monstros que ameaçam seu
+                          lar. Mesmo depois de derrotar a Titã Fêmea, Eren não consegue descansar - uma horda de Titãs se
+                          aproximam da Muralha Rose e a batalha em nome da humanidade continua.</p>
+                  </article>
+                  <article>
+                      <h3 class="title-animes">KAGUYA-SAMA</h3>
+                      <div style="align-items: center;" class="intro-img home-img">
+                          <img class="tamanho-animes" src="kaguya.png"
+                              alt="Banner do anime KAGUYA-SAMA: LOVE IS WAR">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Todos os jovens de elite com
+                          futuros brilhantes acabam indo parar na Academia Shuchiin.
+                          E ambos os líderes do conselho estudantil, Kaguya Shinomiya e Miyuki Shirogane, estão
+                          apaixonados um pelo outro. Ambos são orgulhosos demais para confessar seu amor, e agora ambos
+                          estão brigando pra ver quem
+                          faz o outro se declarar primeiro!
+                          A parte mais divertida do amor é o jogo da conquista!
+                          Uma nova comédia romântica, sobre as batalhas intelectuais de dois estudantes de elite
+                          apaixonados.</p>
+                  </article>
+                  <article>
+                      <h3 class="title-animes">Bleach</h3>
+                      <div style="align-items: center;" class="intro-img home-img">
+                          <img class="tamanho-animes" src="bleach.png" alt="Banner do anime Bleach">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Kurosaki Ichigo é um garoto de
+                          15 anos que pode ver, tocar e falar com espíritos de pessoas mortas. Até que um dia ele encontra
+                          Kuchiki Rukia, uma Shinigami (deus da morte), e descobre posteriormente que também é um
+                          Shinigami. Agora, com seus poderes, ele terá que proteger sua cidade de forças do mal.</p>
+                  </article>
+                  <article>
+                      <h3 class="title-animes">Chainsaw Man</h3>
+                      <div style="align-items: center;" class="intro-img home-img">
+                          <img class="tamanho-animes" src="chainsaw.png" alt="Banner do anime Chainsaw Man">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Denji é um adolescente que mora
+                          com Pochita, o Demônio da Motosserra. Por conta das dívidas que herdou de seu pai, ele vive na
+                          miséria, exterminando outros demônios com Pochita para pagar as contas. Até que, um dia, Denji é
+                          traído e morre. Em seus últimos momentos de consciência, ele firma um contrato com Pochita e
+                          renasce como o Homem-Motosserra - um humano com coração de demônio.</p>
+                  </article>
+                  <article>
+                      <h3 class="title-animes">Blue Lock</h3>
+                      <div style="align-items: center;" class="intro-img home-img">
+                          <img class="tamanho-animes" src="blue.png" alt="Banner do anime Blue Lock">
+                      </div>
+                      <h4 class="sinopse">Sinopse</h4>
+                      <p class="text-sinopse conteudo">Após sofrer um vexame na Copa
+                          do Mundo de 2018, a seleção japonesa sofre para se recompor. Falta ao time um artilheiro, uma
+                          estrela capaz de guiá-los à vitória. Com o intuito de criar um atacante com fome de bola e sede
+                          de vitória, capaz de virar jogos tidos como impossíveis, a Confederação Japonesa de Futebol
+                          reune 300 dos melhores jogadores de base do país em um só lugar. Centenas de jovens vão se
+                          enfrentar numa batalha de músculos e de egos para provar que são os melhores.</p>
+                  </article>
+              </div>
+          </div>
+      </section>
+      <section class="section darkgray-bg">
+        <div id="galeria" class="menu-spacing"></div>
+        <div class="home-content">
+            <h2 style="text-align: center;">Galeria</h2>
+      <div class="grid-galeria home-content">
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="demon-2.jpg" alt="Imagem Demon Slayer: Kimetsu no Yaiba">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="attack-1.jpg"
+                  alt="Imagem Attack on Titan - Shingeki No Kyojin">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="kaguya-1.jpg" alt="Imagem KAGUYA-SAMA: LOVE IS WAR">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="bleach-1.jpg" alt="Imagem Bleach">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="bleach-2.png" alt="Imagem Bleach">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="kaguya-2.jpg" alt="Imagem KAGUYA-SAMA: LOVE IS WAR">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="chainsaw-1.png" alt="Imagem Chainsaw Man">
+          </div>
+          <div style="align-items: center;" class="intro-img home-img galeria-img">
+              <img class="tamanho-animes" src="blue-1.jpg" alt="Imagem Blue Lock">
+          </div>
+      </div>
+  </section>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  </body>
+</html>
